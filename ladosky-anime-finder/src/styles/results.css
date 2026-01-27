@@ -1,0 +1,19 @@
+.results-page{
+    padding: 1rem 2rem;
+    color: var(--text-main);
+    min-height: 100vh;
+    background-color: var(--bg-dark);
+}
+
+.results-page h2{
+    font-family: 'poppins', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--cyan);
+}
+
+.results-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 1rem;
+}

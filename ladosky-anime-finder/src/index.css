@@ -1,0 +1,17 @@
+@import "./styles/global.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'poppins', sans-serif;
+}

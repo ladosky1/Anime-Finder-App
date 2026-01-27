@@ -1,0 +1,33 @@
+.watchlist-page {
+    padding: 1.5rem 2rem;
+    min-height: 100vh;
+}
+.watchlist-page h2{
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--cyan);
+}
+.watchlist-page p{
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+.watchlist-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .watchlist-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .watchlist-page{
+        padding: 1rem;
+    }
+    .watchlist-grid{
+        grid-template-columns: 1fr;
+    }
+}

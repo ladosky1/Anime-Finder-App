@@ -1,0 +1,43 @@
+.category-row h2 {
+    color: var(--text-main);
+}
+
+.category-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.category-list{
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scroll-behavior: smooth;
+}
+
+.category-list::-webkit-scrollbar{
+    height: 6px;
+}
+
+.category-list::-webkit-scrollbar-thumb{
+    background-color: var(--cyan);
+    border-radius: 3px;
+}
+
+.category-list::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.placeholder-card {
+    min-width: 150px;
+    height: 220px;
+    background-color: var(--bg-light);
+    border-radius: var(--radius);
+}
+
+.error-message{
+    color: var(--pink);
+    margin: 2rem 0;
+}

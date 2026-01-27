@@ -1,0 +1,100 @@
+.detail-page{
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--text-main);
+}
+
+.detail-hero{
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+.detail-hero img{
+    width: 260px;
+    border-radius: var(--radius);
+    box-shadow: 
+        0 0px 25px rgba(34,211,238,0.25),
+        0 0 60px rgba(34,211,238,0.1);
+}
+
+.detail-info h1{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.meta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.meta span{
+    font-size: 0.85rem;
+    background: rgba(255, 255,255,0.05);
+    padding: 0.3rem 0.6rem;
+    border-radius: var(--radius);
+}
+
+.detail-watchlist-btn{
+    background-color: var(--cyan);
+    color: var(--bg-dark);
+    border: none;
+    margin-top: 10px;
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.detail-watchlist-btn:hover{
+    background-color: var(--pink);
+}
+
+.detail-content h2{
+    margin: 2rem 0 0.75rem;
+}
+
+.anime-description{
+    line-height: 1.6;
+    color: var(--text-muted);
+    max-width: 800px;
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 10px;
+}
+
+.genres span {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 999px;
+    background-color: var(--pink);
+    color: var(--bg-dark);
+    font-weight: 600;
+    font-size: small;
+}
+
+@media (max-width: 768px) {
+    .detail-hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .detail-hero img {
+        width: 200px;
+    }
+
+    .meta {
+        justify-content: center;
+    }
+}
