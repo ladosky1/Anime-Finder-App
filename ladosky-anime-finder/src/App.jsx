@@ -11,18 +11,22 @@ import Footer from './components/Footer'
 function App() {
   
   return (
-    <WatchlistProvider>
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/detail/:id' element={<Detail />} />
-        <Route path='/results' element={<Results />} />
-        <Route path='/watchlist' element={<Watchlist />} />
-      </Routes>
-      <Footer />
-    </Router>
-    </WatchlistProvider>
+    <div className='app-container'>
+      <WatchlistProvider>
+          <Router>
+          <Navbar />
+        <div className='main-content'>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/detail/:id' element={<Detail />} />
+              <Route path='/results' element={<Results />} />
+              <Route path='/watchlist' element={<Watchlist />} />
+            </Routes>
+        </div>
+          <Footer />
+          </Router>
+      </WatchlistProvider>
+    </div>
   )
   
 }
