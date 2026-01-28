@@ -79,7 +79,7 @@ function Navbar(){
         <nav className='navbar'>
             <div className='logo'>
                 <Link to='/' className='logo'>
-                    AnImeLad🌀
+                    aNiMeLad🌀
                 </Link>
             </div>
 

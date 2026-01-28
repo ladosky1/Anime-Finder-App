@@ -34,8 +34,8 @@ function Home() {
     return(
         <main className='home'>          
             <section className={`hero ${heroVisible ? 'visible' : ''}`}>
-                <h3>Welcome to LadoskyAnimeFinder</h3>
-                <p>Discover and create a watchlist for your anime.</p>
+                <h3>Welcome to aNiMeLad🌀</h3>
+                <p>Discover and create a watchlist for your favourite anime.</p>
             </section>
 
             <section className='categories'>
